@@ -1,0 +1,16 @@
+Don't use in-source build
+
+===============================
+target_link_libraries()
+
+Here's how it relates to PRIVATE and PUBLIC:
+
+PRIVATE: Used for dependencies that are required for building and linking the target, but are not part of the target's public interface.
+
+PUBLIC: Used for dependencies that are both:
+
+required for building and linking the target,
+part of the target's public interface.
+INTERFACE: Used for dependencies that are part of the target's public interface, but are not required for building and linking the target itself.
+
+In simpler terms, PRIVATE dependencies are used by the target, PUBLIC dependencies are used by the target and anyone linking to the target, and INTERFACE dependencies are only for those that are linking to the target, not the target itself.
