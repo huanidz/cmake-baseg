@@ -1,0 +1,2 @@
+/home/huan/prjdir/cmake-baseg/samples/mathincmake/build/CMakeFiles/edit_cache.dir
+/home/huan/prjdir/cmake-baseg/samples/mathincmake/build/CMakeFiles/rebuild_cache.dir

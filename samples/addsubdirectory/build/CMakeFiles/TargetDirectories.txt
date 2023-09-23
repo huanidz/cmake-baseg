@@ -1,0 +1,5 @@
+/home/huan/prjdir/cmake-baseg/samples/addsubdirectory/build/CMakeFiles/edit_cache.dir
+/home/huan/prjdir/cmake-baseg/samples/addsubdirectory/build/CMakeFiles/rebuild_cache.dir
+/home/huan/prjdir/cmake-baseg/samples/addsubdirectory/build/utilslib/CMakeFiles/UtilsLib.dir
+/home/huan/prjdir/cmake-baseg/samples/addsubdirectory/build/utilslib/CMakeFiles/edit_cache.dir
+/home/huan/prjdir/cmake-baseg/samples/addsubdirectory/build/utilslib/CMakeFiles/rebuild_cache.dir

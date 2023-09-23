@@ -14,3 +14,30 @@ part of the target's public interface.
 INTERFACE: Used for dependencies that are part of the target's public interface, but are not required for building and linking the target itself.
 
 In simpler terms, PRIVATE dependencies are used by the target, PUBLIC dependencies are used by the target and anyone linking to the target, and INTERFACE dependencies are only for those that are linking to the target, not the target itself.
+
+===============================
+
+Should not set the project name starting with "lib" as a prefix because the make will build the lib into something like "liblib...". It will have potential error for link libraries later on.
+
+===============================
+
+We can use ENV varialbe in set() but it will be lost after the instance of cmake.
+We can use CACHE to store variable in cache so it won't be lost between instances of cmake.
+eg. set(varName value... CACHE type "docstring" [FORCE]). cache variables often control options for building or paths to dependencies.
+
+===============================
+
+set_property() use cases:
+Setting Required C++ Version: For a particular target, you can set the C++ standard. It's a quite common use case. Here's an example:
+```
+add_executable(my_app main.cpp)
+set_property(TARGET my_app PROPERTY CXX_STANDARD 14)
+```
+
+===============================
+
+include() typically use for include .cmake file for another cmake to be ran (but it can be anything just sayin...).
+
+===============================
+
+Use PROJECT_****_DIR to deal with submodule. Hint: it works with project(projectName)
